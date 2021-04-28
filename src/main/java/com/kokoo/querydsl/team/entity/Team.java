@@ -1,4 +1,4 @@
-package com.kokoo.querydsl.entity;
+package com.kokoo.querydsl.team.entity;
 
 import lombok.*;
 
@@ -9,7 +9,8 @@ import java.util.Date;
 @Setter
 @Builder
 @AllArgsConstructor
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
+//@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@NoArgsConstructor()
 @Entity(name="TEAM")
 public class Team {
     @Id
@@ -20,6 +21,6 @@ public class Team {
     private String teamName;
     @Column(name = "TEAM_SORT")
     private String teamSort;
-    @Column(name = "CRE_DATE")
+    @Column(name = "CRE_DATE", columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP", nullable = false, insertable = false, updatable = false)
     private Date creDate;
 }
