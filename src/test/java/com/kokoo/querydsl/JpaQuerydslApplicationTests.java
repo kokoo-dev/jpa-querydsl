@@ -1,7 +1,9 @@
 package com.kokoo.querydsl;
 
+import com.kokoo.querydsl.team.dto.TeamDTO;
 import com.kokoo.querydsl.team.entity.Team;
 import com.kokoo.querydsl.team.repository.TeamRepository;
+import com.kokoo.querydsl.team.repository.TeamRepositoryCustom;
 import com.kokoo.querydsl.team.support.TeamRepositorySupport;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +21,9 @@ class JpaQuerydslApplicationTests {
 	@Autowired
 	private TeamRepositorySupport teamRepositorySupport;
 
+	@Autowired
+	private TeamRepositoryCustom teamRepositoryCustom;
+
 	@Test
 	public void findByName(){
 		String teamName = "A_TEAM";
@@ -31,7 +36,7 @@ class JpaQuerydslApplicationTests {
 //
 //		teamRepository.save(team);
 
-		List<Team> results = teamRepositorySupport.findByTeamName(teamName);
+		List<TeamDTO> results = teamRepositorySupport.findByTeamName(teamName);
 
 		System.out.println(results.get(0).getTeamSort());
 	}
@@ -39,7 +44,7 @@ class JpaQuerydslApplicationTests {
 	@Test
 	public void findByOne(){
 		Long teamId = 2L;
-		Team team = teamRepositorySupport.findOne(teamId);
+		TeamDTO team = teamRepositoryCustom.findOne(teamId);
 
 		System.out.println("select one!");
 		System.out.println(team.getTeamName());

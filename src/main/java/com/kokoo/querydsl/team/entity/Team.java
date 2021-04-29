@@ -23,4 +23,5 @@ public class Team {
     private String teamSort;
     @Column(name = "CRE_DATE", columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP", nullable = false, insertable = false, updatable = false)
     private Date creDate;
+
 }
