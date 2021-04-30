@@ -9,8 +9,7 @@ import java.util.Date;
 @Setter
 @Builder
 @AllArgsConstructor
-//@NoArgsConstructor(access = AccessLevel.PROTECTED)
-@NoArgsConstructor()
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Entity(name="TEAM")
 public class Team {
     @Id
@@ -24,4 +23,7 @@ public class Team {
     @Column(name = "CRE_DATE", columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP", nullable = false, insertable = false, updatable = false)
     private Date creDate;
 
+    public Team(String teamName){
+        this.teamName = teamName;
+    }
 }

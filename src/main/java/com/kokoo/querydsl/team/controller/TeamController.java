@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -69,8 +70,19 @@ public class TeamController {
         teamRepository.save(team);
     }
 
+    @PostMapping("/insertAll")
+    public void insertAll(){
+        List<Team> teams = new ArrayList<>();
+
+        for(int i=0; i<10; i++)
+            teams.add(new Team("TestTeam"));
+
+        teamRepository.saveAll(teams);
+    }
+
     @PostMapping("/update")
     public void update(Team team){
         teamRepositorySupport.update(team);
     }
+
 }

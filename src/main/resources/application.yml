@@ -4,7 +4,8 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/kokoo?autoReconnect=true&useUnicode=true&characterEncoding=utf-8
+#    url: jdbc:mysql://127.0.0.1:3306/kokoo?autoReconnect=true&useUnicode=true&characterEncoding=utf-8
+    url: jdbc:mysql://127.0.0.1:3306/kokoo?autoReconnect=true&useUnicode=true&characterEncoding=utf-8&rewriteBatchedStatements=true
     username: kokoo
     password: kokoo0717
   jpa:
@@ -17,6 +18,9 @@ spring:
         show_sql: true
         format_sql: true
         use_sql_comments: true
+        jdbc:
+          batch_size: 20
+        order_inserts: true
 
 devtools:
   livereload:
