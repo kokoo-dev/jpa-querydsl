@@ -1,4 +1,4 @@
-package com.kokoo.querydsl.bulk.entity;
+package com.kokoo.querydsl.domain.bulk;
 
 import lombok.*;
 

@@ -1,7 +1,7 @@
-package com.kokoo.querydsl.team.repository;
+package com.kokoo.querydsl.domain.team;
 
-import com.kokoo.querydsl.team.dto.TeamDTO;
-import com.kokoo.querydsl.team.dto.TeamMember;
+import com.kokoo.querydsl.domain.team.TeamDTO;
+import com.kokoo.querydsl.domain.team.TeamMember;
 
 import java.util.List;
 

@@ -1,11 +1,10 @@
-package com.kokoo.querydsl.bulk.service;
+package com.kokoo.querydsl.domain.bulk;
 
-import com.kokoo.querydsl.bulk.entity.Bulk;
-import com.kokoo.querydsl.bulk.repository.BulkRepository;
+import com.kokoo.querydsl.domain.bulk.Bulk;
+import com.kokoo.querydsl.domain.bulk.BulkRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,7 +1,7 @@
-package com.kokoo.querydsl.team.support;
+package com.kokoo.querydsl.domain.team;
 
-import com.kokoo.querydsl.team.dto.TeamDTO;
-import com.kokoo.querydsl.team.entity.Team;
+import com.kokoo.querydsl.domain.team.TeamDTO;
+import com.kokoo.querydsl.domain.team.Team;
 import com.querydsl.core.types.Projections;
 import com.querydsl.jpa.JPQLQuery;
 import com.querydsl.jpa.impl.JPAQueryFactory;
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
-import static com.kokoo.querydsl.team.entity.QTeam.*;
+import static com.kokoo.querydsl.domain.team.QTeam.*;
 @Repository
 public class TeamRepositorySupport extends QuerydslRepositorySupport {
     private final JPAQueryFactory jpaQueryFactory;

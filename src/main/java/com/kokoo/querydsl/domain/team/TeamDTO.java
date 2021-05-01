@@ -1,4 +1,4 @@
-package com.kokoo.querydsl.team.dto;
+package com.kokoo.querydsl.domain.team;
 
 import lombok.Getter;
 

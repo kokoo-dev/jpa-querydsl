@@ -1,8 +1,5 @@
-package com.kokoo.querydsl.bulk.controller;
+package com.kokoo.querydsl.domain.bulk;
 
-import com.kokoo.querydsl.bulk.entity.Bulk;
-import com.kokoo.querydsl.bulk.repository.BulkRepository;
-import com.kokoo.querydsl.bulk.service.BulkService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;

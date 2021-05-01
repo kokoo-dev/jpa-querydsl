@@ -1,16 +1,13 @@
-package com.kokoo.querydsl.team.repository;
+package com.kokoo.querydsl.domain.team;
 
-import com.kokoo.querydsl.team.dto.TeamDTO;
-import com.kokoo.querydsl.team.dto.TeamMember;
-import com.kokoo.querydsl.team.entity.Team;
 import com.querydsl.core.types.Projections;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import lombok.RequiredArgsConstructor;
 
 import java.util.List;
 
-import static com.kokoo.querydsl.team.entity.QTeam.team;
-import static com.kokoo.querydsl.member.entity.QMember.member;
+import static com.kokoo.querydsl.domain.team.QTeam.team;
+import static com.kokoo.querydsl.domain.member.QMember.member;
 
 @RequiredArgsConstructor
 public class TeamRepositoryImpl implements TeamRepositoryCustom{

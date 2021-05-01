@@ -1,12 +1,5 @@
-package com.kokoo.querydsl.team.controller;
+package com.kokoo.querydsl.domain.team;
 
-import com.kokoo.querydsl.team.dto.TeamDTO;
-import com.kokoo.querydsl.team.dto.TeamMember;
-import com.kokoo.querydsl.team.entity.Team;
-import com.kokoo.querydsl.team.repository.TeamRepository;
-import com.kokoo.querydsl.team.repository.TeamRepositoryCustom;
-import com.kokoo.querydsl.team.repository.TeamRepositoryImpl;
-import com.kokoo.querydsl.team.support.TeamRepositorySupport;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;

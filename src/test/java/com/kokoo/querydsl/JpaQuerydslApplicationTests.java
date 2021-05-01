@@ -1,12 +1,11 @@
 package com.kokoo.querydsl;
 
-import com.kokoo.querydsl.bulk.entity.Bulk;
-import com.kokoo.querydsl.bulk.repository.BulkRepository;
-import com.kokoo.querydsl.team.dto.TeamDTO;
-import com.kokoo.querydsl.team.entity.Team;
-import com.kokoo.querydsl.team.repository.TeamRepository;
-import com.kokoo.querydsl.team.repository.TeamRepositoryCustom;
-import com.kokoo.querydsl.team.support.TeamRepositorySupport;
+import com.kokoo.querydsl.domain.bulk.Bulk;
+import com.kokoo.querydsl.domain.bulk.BulkRepository;
+import com.kokoo.querydsl.domain.team.TeamDTO;
+import com.kokoo.querydsl.domain.team.TeamRepository;
+import com.kokoo.querydsl.domain.team.TeamRepositoryCustom;
+import com.kokoo.querydsl.domain.team.TeamRepositorySupport;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

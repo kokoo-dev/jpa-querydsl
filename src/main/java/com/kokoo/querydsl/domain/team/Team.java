@@ -1,4 +1,4 @@
-package com.kokoo.querydsl.team.entity;
+package com.kokoo.querydsl.domain.team;
 
 import lombok.*;
 
