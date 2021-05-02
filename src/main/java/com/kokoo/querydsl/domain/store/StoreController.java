@@ -12,6 +12,11 @@ public class StoreController {
     @Autowired
     StoreRepositoryCustom storeRepositoryCustom;
 
+    @GetMapping("/findAllStoreMenuDTO")
+    public List<StoreMenu> findAllStoreMenuDTO(){
+        return storeRepositoryCustom.findAllStoreMenuDTO();
+    }
+
     @GetMapping("/findAllStoreMenu")
     public List<Store> findAllStoreMenu(){
         return storeRepositoryCustom.findAllStoreMenu();
